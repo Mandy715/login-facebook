@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    background:
+        #f0f2f5;
+}
+
+body * {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.left-login>h1 {
+    font-size: 24px;
+    font-weight: lighter;
+    width: auto;
+    line-height: 28px;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-login {
+    width: 75%;
+    background-color: #ffff;
+    padding: 15px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 10px #ccd0d5;
+    border: #8a8d91;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.textfield>input {
+    border-width: 0.5px;
+    border-style: groove;
+    border-color: #ccd0d5;
+    border-radius: 5px;
+    padding: 14px 16px;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    /*deixa um espaçamento entre a borda do card e o input nos lados direito e esquerdo*/
+
+}
+
+.textfield>input::placeholder {
+    color: #8a8d91;
+
+}
+
+.user {
+    margin-bottom: 10px;
+}
+
+
+
+.btn-login {
+    width: 100%;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: #ffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.esqueceu {
+    color: #1877f2;
+    font-size: 14px;
+    /*margin-bottom: 20px;*/
+    /*text-decoration: underline;*/
+    cursor: pointer;
+}
+
+
+
+.btn-new {
+    width: fit-content;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.criar {
+    font-size: 14px;
+    color: #1c1e21;
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+}
+
+.logo-facebook {
+    padding: 2px 0 16px;
+    height: 106px;
+    margin: -28px;
+    display: flex;
+    align-items: flex-start;
+}
+
+img {
+    border: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .login-container {
+        width: 85%;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .left-login {
+        display: flex;
+        align-items: center;
+    }
+
+    .left-login>h1 {
+        text-align: center;
+    }
+
+    .right-login {
+        width: 70%;
+    }
+
+
+}
